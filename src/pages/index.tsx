@@ -1,10 +1,19 @@
-import styled from 'styled-components'
+import { Col, Container, Row } from "react-bootstrap";
+import Title from "../components/common/Title";
+import { Layout } from "../components/layout";
 
-const Title = styled.h1`
-  color: red;
-  font-size: 50px;
-`
+export default function Home({ ...rest }) {
+  console.log(rest);
 
-export default function Home() {
-  return <Title>My page</Title>
+  return (
+    <Layout>
+      <Container fluid>
+        <Row>
+          <Col lg={12}>
+            <Title hierarchy="h3">Home</Title>
+          </Col>
+        </Row>
+      </Container>
+    </Layout>
+  );
 }
