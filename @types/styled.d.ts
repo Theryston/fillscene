@@ -4,10 +4,27 @@ declare module "styled-components" {
   export interface DefaultTheme {
     colors: {
       backgroundPrimary: string;
-      backgroundSecondary: string;
       primaryColor: string;
-      neutralColor: string;
+      secondaryColor: string;
       tertiaryColor: string;
+      neutralColor: string;
+      gradient: {
+        deg: number;
+        orientations: {
+          beginning: {
+            color: string;
+            percent: string;
+          };
+          middle: {
+            color: string;
+            percent: string;
+          };
+          end: {
+            color: string;
+            percent: string;
+          };
+        };
+      };
     };
     font: {
       family: string;

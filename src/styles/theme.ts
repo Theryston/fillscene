@@ -1,11 +1,28 @@
 export const theme = {
   darkTheme: {
     colors: {
-      backgroundPrimary: "#38373A",
-      backgroundSecondary: "#27262A",
-      primaryColor: "#5992FF",
+      backgroundPrimary: "#1D1D1D",
+      primaryColor: "#E10856",
+      secondaryColor: "#FF00F5",
+      tertiaryColor: "#0FEFFD",
       neutralColor: "#FFFFFF",
-      tertiaryColor: "#EC5F4D",
+      gradient: {
+        deg: 90,
+        orientations: {
+          beginning: {
+            color: "rgba(15,239,253,1)",
+            percent: "0%",
+          },
+          middle: {
+            color: "rgba(248,7,245,1)",
+            percent: "55%",
+          },
+          end: {
+            color: "rgba(15,239,253,0.22)",
+            percent: "80%",
+          },
+        },
+      },
     },
     font: {
       family: "Roboto, sans-serif",
