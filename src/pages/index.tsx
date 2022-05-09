@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Button from "../components/common/Button";
+import IconButton from "../components/common/IconButton/IconButton";
 import Paragraph from "../components/common/Paragraph";
 import Title from "../components/common/Title";
 import { Layout } from "../components/layout";
@@ -17,6 +18,7 @@ export default function Home({ ...rest }) {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </Paragraph>
             <Button variant="primary">label</Button>
+            <IconButton iconName="home" />
           </Col>
         </Row>
       </Container>
