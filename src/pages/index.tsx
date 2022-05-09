@@ -1,4 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
+import Paragraph from "../components/common/Paragraph";
 import Title from "../components/common/Title";
 import { Layout } from "../components/layout";
 
@@ -11,6 +12,9 @@ export default function Home({ ...rest }) {
         <Row>
           <Col lg={12}>
             <Title hierarchy="h3">Home</Title>
+            <Paragraph size="medium" color="red">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </Paragraph>
           </Col>
         </Row>
       </Container>

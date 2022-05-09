@@ -43,12 +43,12 @@ declare module "styled-components" {
           fontWeight: number;
         };
       };
-      copy: {
-        cards: {
+      paragraph: {
+        big: {
           fontSize: string;
           fontHeight: string;
         };
-        body: {
+        medium: {
           fontSize: string;
           fontHeight: string;
         };

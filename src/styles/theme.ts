@@ -41,14 +41,14 @@ export const theme = {
           fontWeight: 500,
         },
       },
-      copy: {
-        cards: {
-          fontSize: "16px",
-          fontHeight: "24px",
-        },
-        body: {
+      paragraph: {
+        big: {
           fontSize: "16px",
           fontHeight: "32px",
+        },
+        medium: {
+          fontSize: "16px",
+          fontHeight: "24px",
         },
         small: {
           fontSize: "14px",
