@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from "react";
-import { Header } from "./Header";
+import Menu from "./Menu";
+
 import * as S from "./styles";
 
 export const Layout = ({
@@ -18,7 +19,7 @@ export const Layout = ({
         </title>
       </Head>
       <S.Container>
-        <Header />
+        <Menu />
         <main>{children}</main>
       </S.Container>
     </>
