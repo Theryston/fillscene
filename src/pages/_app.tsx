@@ -15,9 +15,6 @@ function MyApp({ Component, pageProps }: any) {
         <GlobalStyles />
         <Component
           {...pageProps}
-          _styles={{
-            theme: defaultTheme,
-          }}
         />
       </ThemeProvider>
     </>
