@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import HexToRgba from "../../../../utils/style/HexToRgba";
+import HexToRgba from "../../../utils/style/HexToRgba";
 
 export const ContainerCategory = styled.div`
   ${({ theme }) => css`
