@@ -1,5 +1,8 @@
 export interface IMovie {
+  _id: string;
+  title: string;
   posters: IMoviePoster[];
+  genres: IMovieGenre[];
 }
 
 export interface IMoviePoster {
@@ -19,4 +22,10 @@ export interface IMoviePosterSize {
   height: number;
   url: string;
   label: "original" | "w200" | "w300" | "w400" | "w500";
+}
+
+export interface IMovieGenre {
+  _id: string;
+  tmdb_id: number;
+  name: string;
 }

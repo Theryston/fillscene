@@ -34,6 +34,8 @@ export default function Home() {
             </div>
             <MovieCard
               movie={{
+                _id: "1",
+                title: "Spider-Man No Way Home",
                 posters: [
                   {
                     aspect_ratio: 0.667,
@@ -58,6 +60,18 @@ export default function Home() {
                         url: "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
                       },
                     ],
+                  },
+                ],
+                genres: [
+                  {
+                    _id: "1",
+                    tmdb_id: 28,
+                    name: "Action",
+                  },
+                  {
+                    _id: "2",
+                    tmdb_id: 12,
+                    name: "Adventure",
                   },
                 ],
               }}

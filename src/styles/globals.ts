@@ -10,4 +10,15 @@ export const GlobalStyles = createGlobalStyle`
       font-family: ${theme.font.family};
     `}
   }
+
+  a {
+    ${({ theme }) => css`
+      color: ${theme.colors.neutralColor};
+      text-decoration: none;
+
+      :hover {
+        color: ${theme.colors.neutralColor};
+      }
+    `}
+  }
 `;
