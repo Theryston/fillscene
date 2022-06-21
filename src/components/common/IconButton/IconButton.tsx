@@ -1,15 +1,14 @@
+import React from "react";
 import * as S from "./styles";
-import { IconName } from "../Icon/icons";
-import Icon from "../Icon";
 
 interface IProps {
-  iconName: IconName;
+  Icon: any;
 }
 
-export default function IconButton({ iconName }: IProps) {
+export default function IconButton({ Icon }: IProps) {
   return (
     <S.IconButton>
-      <Icon name={iconName} />
+      <Icon color="#ffffff" size="25px" />
     </S.IconButton>
   );
 }

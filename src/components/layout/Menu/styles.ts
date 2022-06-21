@@ -9,6 +9,7 @@ export const ContainerMenu = styled.div`
     bottom: 0;
     left: 0;
     width: 56px;
+    z-index: 999999;
 
     background: ${HexToRgba(theme.colors.backgroundPrimary, 0.5)};
 

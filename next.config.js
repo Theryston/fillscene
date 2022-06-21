@@ -2,19 +2,12 @@
 
 const nextConfig = {
   images: {
-    domains: ['image.tmdb.org'],
+    domains: ["image.tmdb.org"],
   },
   reactStrictMode: true,
   compiler: {
     styledComponents: true,
   },
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: ["@svgr/webpack"],
-    });
-    return config;
-  },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

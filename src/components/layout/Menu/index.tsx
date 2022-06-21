@@ -2,6 +2,10 @@ import { ContainerItems, ContainerMenu, ItemMenu, LogoImage } from "./styles";
 import FillsceneLogo from "../../../assets/fillscene/logo.png";
 import Link from "next/link";
 import IconButton from "../../common/IconButton/IconButton";
+import { ImHome3 } from "react-icons/im";
+import { MdLocalMovies } from "react-icons/md";
+import { BiCategory } from "react-icons/bi";
+import { AiOutlineStar } from "react-icons/ai";
 
 export default function Menu() {
   return (
@@ -15,28 +19,28 @@ export default function Menu() {
         <ItemMenu>
           <Link href="/">
             <a title="Home">
-              <IconButton iconName="home" />
+              <IconButton Icon={ImHome3} />
             </a>
           </Link>
         </ItemMenu>
         <ItemMenu>
           <Link href="/">
             <a title="Movies">
-              <IconButton iconName="movie" />
+              <IconButton Icon={MdLocalMovies} />
             </a>
           </Link>
         </ItemMenu>
         <ItemMenu>
           <Link href="/">
             <a title="Categories">
-              <IconButton iconName="gallery" />
+              <IconButton Icon={BiCategory} />
             </a>
           </Link>
         </ItemMenu>
         <ItemMenu>
           <Link href="/">
             <a title="Favorites">
-              <IconButton iconName="star-stroke" />
+              <IconButton Icon={AiOutlineStar} />
             </a>
           </Link>
         </ItemMenu>

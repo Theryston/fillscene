@@ -6,8 +6,54 @@ import Paragraph from "../components/common/Paragraph";
 import Title from "../components/common/Title";
 import { Layout } from "../components/layout";
 import MovieCard from "../components/Movie/MovieCard";
+import MovieFeatured from "../components/Movie/MovieFeatured";
+import { IMovie } from "../interfaces/IMovie";
+import { ImHome3 } from "react-icons/im";
 
 export default function Home() {
+  const movie: IMovie = {
+    _id: "1",
+    title: "Spider-Man No Way Home",
+    posters: [
+      {
+        aspect_ratio: 0.667,
+        height: 3000,
+        iso_639_1: "en",
+        file_path: "/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+        vote_average: 6.318,
+        vote_count: 102,
+        width: 2000,
+        base_url: "https://image.tmdb.org/t/p/original",
+        sizes: [
+          {
+            height: 3000,
+            width: 2000,
+            label: "original",
+            url: "https://image.tmdb.org/t/p/original/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+          },
+          {
+            height: 750,
+            width: 500,
+            label: "w500",
+            url: "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+          },
+        ],
+      },
+    ],
+    genres: [
+      {
+        _id: "1",
+        tmdb_id: 28,
+        name: "Action",
+      },
+      {
+        _id: "2",
+        tmdb_id: 12,
+        name: "Adventure",
+      },
+    ],
+  };
+
   return (
     <Layout>
       <Container fluid>
@@ -23,7 +69,7 @@ export default function Home() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </Paragraph>
             <Button variant="primary">label</Button>
-            <IconButton iconName="home" />
+            <IconButton Icon={ImHome3} />
             <div
               style={{
                 backgroundColor: "#ffba3a",
@@ -32,50 +78,8 @@ export default function Home() {
             >
               <MovieCategory label="label" />
             </div>
-            <MovieCard
-              movie={{
-                _id: "1",
-                title: "Spider-Man No Way Home",
-                posters: [
-                  {
-                    aspect_ratio: 0.667,
-                    height: 3000,
-                    iso_639_1: "en",
-                    file_path: "/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
-                    vote_average: 6.318,
-                    vote_count: 102,
-                    width: 2000,
-                    base_url: "https://image.tmdb.org/t/p/original",
-                    sizes: [
-                      {
-                        height: 3000,
-                        width: 2000,
-                        label: "original",
-                        url: "https://image.tmdb.org/t/p/original/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
-                      },
-                      {
-                        height: 750,
-                        width: 500,
-                        label: "w500",
-                        url: "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
-                      },
-                    ],
-                  },
-                ],
-                genres: [
-                  {
-                    _id: "1",
-                    tmdb_id: 28,
-                    name: "Action",
-                  },
-                  {
-                    _id: "2",
-                    tmdb_id: 12,
-                    name: "Adventure",
-                  },
-                ],
-              }}
-            />
+            <MovieCard movie={movie} />
+            <MovieFeatured movie={movie} />
           </Col>
         </Row>
       </Container>

@@ -15,8 +15,6 @@ interface IProps {
 }
 
 export default function MovieCard({ movie }: IProps) {
-  console.log(movie);
-
   return (
     <Container>
       <PosterImage
