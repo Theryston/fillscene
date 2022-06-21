@@ -16,6 +16,7 @@ export const Layout = ({
       <Head>
         <title>
           {title ? title : "Fillscene - Assistir filmes e series grátis"}
+          <link rel="icon" href="/favicon.ico" />
         </title>
       </Head>
       <S.Container>
